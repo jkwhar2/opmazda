@@ -371,6 +371,12 @@ void ignition_can_hook(CAN_FIFOMailBox_TypeDef *to_push) {
       // GTW_status
       ignition_can = (GET_BYTE(to_push, 0) & 0x1) != 0;
     }
+    // Mazda exception
+    if ((addr == 0x9E) && (len == 8)) {
+      ignition_can = ((GET_BYTE(to_push, 0) >> 4) == 0xDU) ||
+	((GET_BYTE(to_push, 0) >> 4) == 0xCU);
+    }
+
   }
 }
 
