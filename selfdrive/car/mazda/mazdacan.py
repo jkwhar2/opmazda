@@ -86,6 +86,11 @@ def create_alert_command(packer, cam_msg: dict, ldw: bool, steer_required: bool,
 
     "TJA_TRANSITION" : 3 if tja == 3 else 0,
     "TJA" : tja,
+
+    "LINE_VISIBLE": 0 if tja == 2 else 1,
+    "LINE_NOT_VISIBLE": 1 if tja == 2 else 0,
+    "LANE_LINES": 1 if tja == 2 else 2,
+
   })
   return packer.make_can_msg("CAM_LANEINFO", 0, values)
 
