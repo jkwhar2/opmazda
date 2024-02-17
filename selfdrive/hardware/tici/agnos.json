@@ -1,10 +1,10 @@
 [
   {
     "name": "boot",
-    "url": "https://commadist.azureedge.net/agnosupdate/boot-e992b0461fc7705ce54f556247cd721b04d4d28885a461cd536389fd0bcb7e9c.img.xz",
-    "hash": "e992b0461fc7705ce54f556247cd721b04d4d28885a461cd536389fd0bcb7e9c",
-    "hash_raw": "e992b0461fc7705ce54f556247cd721b04d4d28885a461cd536389fd0bcb7e9c",
-    "size": 14772224,
+    "url": "https://commadist.azureedge.net/agnosupdate/boot-72662ec5d586c7a22659a1c8b140932d5472914176020fe76ba4204edbbb214a.img.xz",
+    "hash": "72662ec5d586c7a22659a1c8b140932d5472914176020fe76ba4204edbbb214a",
+    "hash_raw": "72662ec5d586c7a22659a1c8b140932d5472914176020fe76ba4204edbbb214a",
+    "size": 14780416,
     "sparse": false,
     "full_check": true,
     "has_ab": true
